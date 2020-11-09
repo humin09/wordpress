@@ -2,7 +2,7 @@
   "version": "2.0",
   "envId": "{{env.ENV_ID}}",
   "framework": {
-    "name": "alichu1",
+    "name": "alichu2",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-container",
