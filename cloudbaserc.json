@@ -51,7 +51,7 @@
         },
         {
           "type": "CynosDB",
-          "name": "WordPress",
+          "name": "wordpress-cynosdb",
           "envMap": {
             "IP": "DB_IP",
             "PORT": "DB_PORT",
