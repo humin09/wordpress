@@ -2,7 +2,7 @@
   "version": "2.0",
   "envId": "{{env.ENV_ID}}",
   "framework": {
-    "name": "alichu",
+    "name": "alichu1",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-container",
@@ -19,16 +19,35 @@
             "WORDPRESS_DB_NAME": "wordpress"
           },
           "volumeMounts": {
-            "/var/www/html": "WORDPRESS_CFS"
+            "/var/www/html": "wordpress-cfs"
           }
         }
       }
     },
     "requirement": {
+      "network": {
+        "regionId": 1
+      },
+      "tags": ["hehe","hehehe","hehehehe"],
+      "environment": {
+        "SECRET_TOKEN": {
+          "description": "A secret key for verifying the integrity of signed cookies.",
+          "required": true,
+          "default": "default_value",
+          "validation": {
+            "rule": {
+              "type": "RegExp",
+              "pattern": "[3-9]",
+              "flag": "ig"
+            },
+            "errorMessage": "数值范围3-9"
+          }
+        }
+      },
       "addons": [
         {
           "type": "CFS",
-          "name": "WORDPRESS_CFS"
+          "name": "wordpress-cfs"
         },
         {
           "type": "CynosDB",
