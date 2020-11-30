@@ -10,7 +10,7 @@
           "serviceName": "wordpress",
           "servicePath": "/",
           "uploadType": "image",
-          "containerPort": 80,
+          "containerPort": 8080,
           "imageInfo": {
             "imageUrl": "wordpress:5.5.1"
           },
