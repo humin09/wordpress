@@ -1,6 +1,5 @@
 {
   "version": "2.0",
-  "envId": "{{env.ENV_ID}}",
   "framework": {
     "name": "alichu2",
     "plugins": {
