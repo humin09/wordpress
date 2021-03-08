@@ -23,6 +23,7 @@
         }
       }
     },
+    
     "requirement": {
       "network": {
         "regionId": 1
